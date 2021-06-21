@@ -1,68 +1,90 @@
 .coin-container {
-   display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .coin-row {
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-start;
-   align-items: center;
-   height: 80px;
-   border-bottom: 1px solid #d7d7d7;
-   width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 80px;
+  /* border: 1px solid #d7d7d7; */
+  border-radius: 5px;
+  padding-left: 20px;
+
+  width: 950px;
+  margin-bottom: 10px;
+  /* box-shadow: 10px 10px 10px -10px rgba(33, 33, 33, 0.27);
+  -webkit-box-shadow: 10px 10px 10px -10px rgba(33, 33, 33, 0.27);
+  -moz-box-shadow: 10px 10px 10px -10px rgba(33, 33, 33, 0.27); */
+  box-shadow: 10px 10px 10px -10px rgba(96, 96, 96, 0.27);
+  -webkit-box-shadow: 10px 10px 10px -10px rgba(96, 96, 96, 0.27);
+  -moz-box-shadow: 10px 10px 10px -10px rgba(96, 96, 96, 0.27);
+  border: none;
+}
+
+.coin-row:hover {
+  transform: scale(1.05);
 }
 
 .coin {
-   display: flex;
-   align-items: center;
-   padding-right: 24px;
-
-   min-width: 300px;
+  display: flex;
+  align-items: center;
+  padding-right: 24px;
+  min-width: 300px;
 }
 
 .coin h1 {
-   font-size: 16px;
-   width: 150px;
+  font-size: 16px;
+  width: 150px;
 }
 
 .coin img {
-   height: 30px;
-   width: 30px;
-   margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
 }
 
 .coin-symbol {
-   text-transform: uppercase;
+  text-transform: uppercase;
+  padding-top: 0.2em;
 }
 
 .coin-data {
-   display: flex;
-   text-align: right;
-   justify-content: space-between;
-   width: 100%;
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .coin-price {
-   width: 110px;
+  width: 100px;
+  padding-top: 9px;
+  padding-left: 20px;
+  text-align: left;
 }
 
 .coin-volume {
-   width: 155px;
+  width: 155px;
 }
 
 .coin-marketcap {
-   width: 230px;
+  width: 300px;
+  text-align: left;
+  padding-left: 70px;
+  padding-top: 0.6rem;
 }
 
 .coin-percent {
-   width: 100px;
+  width: 100px;
+  padding-top: 10px;
 }
 
 .red {
-   color: #f00606;
+  color: #f00606;
 }
 
 .green {
-   color: #11d811;
+  color: #11d811;
 }
